@@ -1,0 +1,51 @@
+/* pages/NoteEdit/NoteEdit.wxss */
+page{
+  height:100%;
+}
+.the-image{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+ 
+.the-text{
+  position:absolute;
+  left: 5%;
+  top: 3.5%;
+  font-size: 28rpx;
+  text-align: left;
+
+}
+ 
+.new-btn{
+  position:absolute;
+  bottom: 200rpx;
+  right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  line-height:80rpx;
+}
+ 
+.the-view{
+  position:absolute;
+  top: 7%;
+  width: 100%;
+  height: 86%;
+}
+ 
+.the-textarea{
+  overflow:hidden;
+  line-height:50rpx;
+}
+.the-btn{
+  position:absolute;
+  bottom: 200rpx;
+  right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  line-height:80rpx;
+  background-color: white;
+  border:3px solid rgb(255,187,0);
+}
