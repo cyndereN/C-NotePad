@@ -67,8 +67,4 @@ Page({
       })
     }
   },
-  cancelTap(e) {
-    //删除按钮
-    console.log(e)
-  }
 })

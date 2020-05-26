@@ -12,9 +12,20 @@ Page({
       url: '../index/index'
     })
     //保存按钮
+
+    var oldText = wx.getStorageSync('oldText');
    if (this.data.textAreaDes.length == 0) {
-      return;
+    for (var i = 0; i < oldText.length; i++) {
+      var dic = oldText[i];
+      if (dic.id == this.data.id) {
+        oldText.splice(i,1)
+        wx.setStorageSync('oldText', oldText);
+        break;
     }
+    console.log(oldText)
+  }
+  return ;
+}
     //获取本地缓存
     var oldText = wx.getStorageSync('oldText');
     if (oldText != null && oldText != '') {
@@ -80,7 +91,6 @@ Page({
     })
   },
   onUnload:function(){
-
   },
   }
 )
